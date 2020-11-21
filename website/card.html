@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta name="viewport" content="width=device-width, intial-scale=1.0">
+	 <meta name="description" content="Profile Crad">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="icon"  href="g.png">
 	<title>Profile Cards</title>
 	<style type="text/css">
@@ -42,15 +43,28 @@
 	padding: 1%;
 	margin: 1%;
 }
+.header{
+	display: flex;
+	width: 100%;
+	margin: 1%;
+	padding: 1%;
+}
+.header>div{
+	width: 50%;
+	padding: 1%;
+	margin: 1%;
+
+}
 
 		@media only screen and (min-width:320px) and (max-width: 480px){
-			.profile{
+			.profile,.header{
 				display: flex;
 				flex-direction: column;
 				max-width: 100%;
 			}
-			.profile>div{
+			.profile>div,.header>div{
 				width: 90%;
+				text-align: center;
 
 			}
 			.copy{
@@ -106,6 +120,17 @@
 	</style>
 </head>
 <body>
+	<div class="header">
+		<div class="left">
+			<img src="g.png" width="200px" height="200px" alt="profile">
+		</div>
+		<div class="right">
+			<h1 style="color: blue">ReactJS</h1>
+			<h1 style="color: blue">Online Traning</h1>
+			<h1 style="color: blue">APSSDC</h1>
+		</div>
+	</div>
+<h1 style="text-align: center; color: maroon">My Works</h1>
 <div class="profile">
 	<div class="card">
 		<img src="g.png" width="200px" height="200px" alt="profilecard">
@@ -131,7 +156,7 @@
 </div>
 <!-- Footer -->
 <div class="copy">
-	<h1> All Copy Rights Reviced By APSSDC REACTJS Team@2020</h1>
+	<h1 style="color:#ffff"> All Copy Rights Reviced By APSSDC REACTJS Team@2020</h1>
 </div>
 </body>
 </html>
